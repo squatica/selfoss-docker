@@ -6,8 +6,10 @@ services:
       dockerfile: ./Dockerfile.master
     volumes:
       - datamaster:/var/www/html/data
+      - configmaster:/var/www/html/config/
     ports:
       - "8391:80"
 
 volumes:
   datamaster:
+  configmaster:

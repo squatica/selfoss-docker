@@ -1,7 +1,7 @@
 # selfoss-docker
 Dockerfile for Selfoss RSS aggregator
 
-Note: this image uses the default Selfoss config.
+Selfoss config is mounted in a separate volume, so your custom settings should survive reboot.
 
 To run the latest stable tag (2.18) use:
 ```
