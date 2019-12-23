@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    build: .
+    volumes:
+      - data:/var/www/html/data
+    ports:
+      - "8390:80"
+
+volumes:
+  data:

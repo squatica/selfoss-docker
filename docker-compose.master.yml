@@ -1,0 +1,13 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.master
+    volumes:
+      - datamaster:/var/www/html/data
+    ports:
+      - "8391:80"
+
+volumes:
+  datamaster:
