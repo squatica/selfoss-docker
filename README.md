@@ -12,7 +12,7 @@ Then find the web interface at http://localhost:8390
 
 To run the latest master version use:
 ```
-docker-compose -f docker-compose.master.yml up
+docker-compose -f docker-compose-master.yml up
 ```
 Then find the web interface at http://localhost:8391
 
