@@ -15,7 +15,7 @@ RUN cd /selfoss && composer install --ignore-platform-reqs --optimize-autoloader
 
 
 
-FROM node:12-stretch as npm
+FROM node:13-buster as npm
 
 COPY --from=composer /selfoss /selfoss
 
@@ -23,7 +23,7 @@ RUN cd /selfoss && npm i && ./node_modules/.bin/grunt client:install
 
 
 
-FROM php:7.3-apache-stretch
+FROM php:7.4-apache-buster
 
 COPY --from=npm /selfoss /var/www/html/
 
